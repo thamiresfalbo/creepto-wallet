@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # Please use dev:setup in (lib/tasks/dev.rake)
 # require 'faker'
 

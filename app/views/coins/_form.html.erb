@@ -25,6 +25,11 @@
     <%= form.label :url_image %>
     <%= form.text_field :url_image %>
   </div>
+  
+  <div class="field">
+	<%= form.label :mining_type_id %>  
+  	<%= form.select("mining_type_id", MiningType.pluck(:description, :id), {include_blank: "------"})  %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>

@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.6'
 
+gem 'bootsnap', '~> 1.12.0', require: false
 gem 'coffee-rails', '~> 4.2'
 gem 'faker'
 gem 'jbuilder', '~> 2.5'
@@ -10,12 +13,13 @@ gem 'pry-rails'
 gem 'puma', '~> 3.11'
 gem 'rack-attack'
 gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
+gem 'rubocop'
+gem 'rubocop-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'sqlite3'
 gem 'tty-spinner'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
-gem 'bootsnap', '~> 1.12.0', require: false
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

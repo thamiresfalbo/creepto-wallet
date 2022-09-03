@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 namespace :dev do
   desc 'Configure the development environment'
   task setup: :environment do
@@ -5,8 +7,8 @@ namespace :dev do
       my_spinner('Limpando o Banco de Dados...') { `rails db:drop` }
       my_spinner('Criando o Banco de Dados...') { `rails db:create` }
       my_spinner('Migrando os dados...') { `rails db:migrate` }
-      `rails dev:add_coins`
       `rails dev:add_mining`
+      `rails dev:add_coins`
     else
       puts 'Not in development environment.'
     end
@@ -17,11 +19,11 @@ namespace :dev do
     if Rails.env.development?
       def prepare
         coin = Faker::CryptoCoin.unique.coin_array
-        { description: coin[0], acronym: coin[1], url_image: coin[2] }
+        { description: coin[0], acronym: coin[1], url_image: coin[2], mining_type: MiningType.all.sample }
       end
 
       my_spinner('Adicionando moedas...') do
-        15.times do
+        5.times do
           Coin.find_or_create_by!(prepare)
         end
       end
@@ -35,9 +37,9 @@ namespace :dev do
     if Rails.env.development?
       my_spinner('Cadastrando tipos de mineração...') do
         mining_types = [
-          { name: 'Proof of Work', acronym: 'PoW' },
-          { name: 'Proof of Stake', acronym: 'PoS' },
-          { name: 'Proof of Capacity', acronym: 'PoC' }
+          { description: 'Proof of Work', acronym: 'PoW' },
+          { description: 'Proof of Stake', acronym: 'PoS' },
+          { description: 'Proof of Capacity', acronym: 'PoC' }
         ]
 
         mining_types.each do |mining|
