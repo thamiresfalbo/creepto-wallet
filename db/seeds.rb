@@ -1,13 +1,11 @@
-require 'faker'
+# Please use dev:setup in (lib/tasks/dev.rake)
+# require 'faker'
 
-puts "Seedando o banco de dados..."
-def prepare
-  temp = Faker::CryptoCoin.unique.coin_array
-  {description: temp[0], acronym: temp[1], url_image: temp[2]}
-end
+# def prepare
+#   coin = Faker::CryptoCoin.unique.coin_array
+#   { description: coin[0], acronym: coin[1], url_image: coin[2] }
+# end
 
-15.times do
-  Coin.create!(prepare)
-end
-
-puts "Sucesso!"
+# 15.times do
+#   Coin.create!(prepare)
+# end
