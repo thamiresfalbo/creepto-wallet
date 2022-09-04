@@ -20,6 +20,7 @@ gem 'sqlite3'
 gem 'tty-spinner'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
+gem 'rails-i18n', '~> 5.1'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -39,5 +40,3 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-
-gem 'ruby-lsp', '~> 0.3.0', group: :development
