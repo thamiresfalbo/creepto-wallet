@@ -5,3 +5,26 @@ pt-BR:
     show: "Mostrar"
     delete: "Apagar"
     confirm: "Tem certeza?"
+  activerecord:
+    models:
+      coin:
+        one: Moeda
+        others: Moedas
+      mining_type:
+        one: Tipo de Mineração
+        others: Tipos de Mineração
+    attributes:
+      coin:
+        id: Código ID
+        description: Descrição
+        acronym: Sigla
+        mining_type: Tipo de Mineração
+        url_image: URL da Imagem
+        updated_at: Atualizado em
+      mining_type:
+        id: Código ID
+        description: Descrição
+        acronym: Sigla
+        url_image: URL da Imagem
+        updated_at: Atualizado em
+        created_at: Criado em
