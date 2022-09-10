@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Description:</strong>
+  <strong><%= Coin.human_attribute_name(:description) %></strong>
   <%= @coin.description %>
 </p>
 
 <p>
-  <strong>Acronym:</strong>
+  <strong><%= Coin.human_attribute_name(:acryonym) %></strong>
   <%= @coin.acronym %>
 </p>
 
 <p>
-  <strong>Url image:</strong>
+  <strong><%= Coin.human_attribute_name(:url_image) %>:</strong>
   <%= @coin.url_image %>
 </p>
 

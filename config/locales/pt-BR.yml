@@ -1,4 +1,5 @@
 pt-BR:
+  actual_locale: "Português do Brasil"
   hello: "Olá!"
   links:
     edit: "Editar"
@@ -9,10 +10,10 @@ pt-BR:
     models:
       coin:
         one: Moeda
-        others: Moedas
+        other: Moedas
       mining_type:
         one: Tipo de Mineração
-        others: Tipos de Mineração
+        other: Tipos de Mineração
     attributes:
       coin:
         id: Código ID
