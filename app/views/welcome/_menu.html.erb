@@ -1,9 +1,9 @@
 <ul>
     <li>
-	<%= link_to "Shitcoins", "coins" %>
+	<%= link_to Coin.model_name.human(count:2), "coins" %>
     </li>
     <li>
-	<%= link_to "Tipos de Mineração", "mining_types" %>
+	<%= link_to MiningType.model_name.human(count:2), "mining_types" %>
     </li>
     
 </ul>

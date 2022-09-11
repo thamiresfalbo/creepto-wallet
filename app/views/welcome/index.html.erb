@@ -1,4 +1,6 @@
-<h1>Welcome!</h1>
+<h1><%= t('hello') %></h1>
+<p><%= link_to "Português", root_path(locale: 'pt-BR') %></p>
+<p><%= link_to "English", root_path(locale: 'en') %></p>
 <p><%= I18n.l(Date.today) %></p>
 <p><%= t('actual_locale') %></p>
 
