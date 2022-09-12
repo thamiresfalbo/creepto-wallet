@@ -2,7 +2,7 @@
 
 <h1><%= Coin.model_name.human(count: 2) %></h1>
 <h2><%= cookies[:curso] %></h2>
-<table>
+<table class="table table-striped">
     <thead>
 	<tr>
 	    <th><%= @coins.human_attribute_name(:description) %></th>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Coin', new_coin_path %>
+<%= link_to t("links.new"), new_coin_path, class: "btn btn-primary" %>

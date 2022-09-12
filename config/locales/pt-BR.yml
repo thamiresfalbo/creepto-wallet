@@ -1,11 +1,12 @@
 pt-BR:
   actual_locale: "Português do Brasil"
-  hello: "Olá!"
+  hello: Olá!
   links:
-    edit: "Editar"
-    show: "Mostrar"
-    delete: "Apagar"
-    confirm: "Tem certeza?"
+    new: Novo
+    edit: Editar
+    show: Mostrar
+    delete: Apagar
+    confirm: Tem certeza?
   activerecord:
     models:
       coin:
@@ -22,6 +23,7 @@ pt-BR:
         mining_type: Tipo de Mineração
         url_image: URL da Imagem
         updated_at: Atualizado em
+        created_at: Criado em
       mining_type:
         id: Código ID
         description: Descrição

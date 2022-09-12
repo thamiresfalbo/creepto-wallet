@@ -1,8 +1,34 @@
 en:
-  actual_locale: "English"
-  hello: "Hello!"
+  actual_locale: English
+  hello: Welcome!
   links:
-    edit: "Edit"
-    show: "Show"
-    delete: "Delete"
-    confirm: "Are you sure?"
+    new: New
+    edit: Edit
+    show: Show
+    delete: Delete
+    confirm: Are you sure?
+  activerecord:
+    models:
+      coin:
+        one: Coin
+        other: Coins
+      mining_type:
+        one: Mining Type
+        other: Mining Types
+    attributes:
+      coin:
+        id: ID
+        description: Description
+        acronym: Symbol
+        mining_type: Mining Type
+        url_image: Image URL
+        updated_at: Updated in
+        created_at: Created at
+      mining_type:
+        id: ID
+        description: Description
+        acronym: Symbol
+        mining_type: Mining Type
+        url_image: Image URL
+        updated_at: Updated in
+        created_at: Created at

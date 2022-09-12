@@ -2,6 +2,14 @@
   "name": "creepto-wallet",
   "private": true,
   "dependencies": {
-    "bootstrap": "^5.2.0"
-  }
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "5.2.1",
+    "jquery": "^3.6.1",
+    "notify-js-legacy": "^0.4.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:thamiresfalbo/creepto-wallet.git",
+  "author": "thamires.falbo@gmail.com",
+  "license": "MIT"
 }
